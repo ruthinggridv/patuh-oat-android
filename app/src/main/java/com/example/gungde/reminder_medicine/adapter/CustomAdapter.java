@@ -71,7 +71,6 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
                     Intent i = new Intent(context, Report.class);
                     i.putExtra("obat", data.get(getAdapterPosition()));
                     context.startActivity(i);
-                    ((Activity)context).finish();
                 }
             });
         }

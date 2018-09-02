@@ -7,11 +7,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -20,10 +16,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.example.gungde.reminder_medicine.adapter.CustomAdapter;
 import com.example.gungde.reminder_medicine.model.DataObat;
 import com.example.gungde.reminder_medicine.model.HapusModel;
-import com.example.gungde.reminder_medicine.model.LoginModel;
 import com.example.gungde.reminder_medicine.model.ReportObat;
 import com.example.gungde.reminder_medicine.network.GetDataService;
 import com.example.gungde.reminder_medicine.network.RetrofitClientInstance;
@@ -34,7 +28,6 @@ import com.github.mikephil.charting.data.PieDataSet;
 import com.github.mikephil.charting.data.PieEntry;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -80,7 +73,7 @@ public class Report extends AppCompatActivity {
         pref = this.getSharedPreferences("medical", Context.MODE_PRIVATE);
         String kategori = pref.getString("kategori", "0");
 
-        if(kategori.equals("Dokter") || kategori.equals("Pasien")){
+        if (kategori.equals("Dokter") || kategori.equals("Pasien")) {
             logoDelete.setVisibility(View.INVISIBLE);
             logoEdit.setVisibility(View.INVISIBLE);
         }
@@ -170,7 +163,7 @@ public class Report extends AppCompatActivity {
 //        pref = this.getSharedPreferences("medical", Context.MODE_PRIVATE);
 //        String kategori = pref.getString("kategori", "0");
 //        if(kategori.equals("Keluarga")) {
-            startActivity(new Intent(Report.this, MainActivity.class));
+        startActivity(new Intent(Report.this, MainActivity.class));
 //        }else{
 //            btnBack.setOnClickListener(new View.OnClickListener() {
 //                @Override
@@ -196,11 +189,11 @@ public class Report extends AppCompatActivity {
         DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                switch (which){
+                switch (which) {
                     case DialogInterface.BUTTON_POSITIVE:
                         GetDataService api = RetrofitClientInstance.getRetrofitInstance().create(GetDataService.class);
                         Call<HapusModel> call = api.delObat(obat.getId_obat());
-                        Log.e("id",""+ obat.getId_obat());
+                        Log.e("id", "" + obat.getId_obat());
                         call.enqueue(new Callback<HapusModel>() {
                             @Override
                             public void onResponse(Call<HapusModel> call, Response<HapusModel> response) {
@@ -213,6 +206,7 @@ public class Report extends AppCompatActivity {
                                     Toast.makeText(Report.this, "tidak ada ID obat", Toast.LENGTH_SHORT).show();
                                 }
                             }
+
                             @Override
                             public void onFailure(Call<HapusModel> call, Throwable t) {
                                 Log.e("ERROR", t.toString());
@@ -275,5 +269,10 @@ public class Report extends AppCompatActivity {
         Intent i = new Intent(this, Aturobat.class);
         i.putExtra("obat", obat);
         startActivity(i);
+    }
+
+    @OnClick(R.id.btnHitung)
+    public void onHitung() {
+        QuestionaryActivity.start(this);
     }
 }

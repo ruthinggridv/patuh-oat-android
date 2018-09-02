@@ -82,4 +82,14 @@
     <string name="title_activity_list_nama_pasien">ListNamaPasien</string>
     <string name="title_activity_report_artikel">ReportArtikel</string>
     <string name="title_activity_list_artikel_pasien">ListArtikelPasien</string>
+    <string name="title_activity_questionary">QuestionaryActivity</string>
+    <string name="txt_question_1">Apakah terkadang anda lupa minum obat TBC?</string>
+    <string name="txt_question_2">Seseorang terkadang tidak minum obat karena alasan lain selain lupa. Dalam 2 minggu terakhir, apakah ada kalanya anda tidak minum obat TBC?</string>
+    <string name="txt_question_3">Apakah anda pernah mengurangi atau berhenti minum obat TBC tanpa memberitahu dokter anda karena anda merasa kondisi Anda lebih buruk minum obat TBC  tersebut?</string>
+    <string name="txt_question_4">Ketika anda bepergian atau tidak di rumah, apakah anda terkadang lupa membawa obat TBC anda?</string>
+    <string name="txt_question_5">Apakah anda minum seluruh obat TBC anda kemarin?</string>
+    <string name="txt_question_6">Ketika anda merasa gejala penyakit anda membaik dan terkontrol, apakah terkadang anda menghentikan minum obat TBC anda?</string>
+    <string name="txt_question_7">Minum obat setiap hari sangatlah tidak nyaman untuk beberapa individu. Apakah anda pernah merasa terganggu dalam mentaati program pengobatan TBC yang sedang anda jalani?</string>
+    <string name="txt_question_8">Seberapa seringkah anda mengalami kesulitan dalam mengingat seluruh obat yang seharusnya anda minum?</string>
+    <string name="txt_question_9">Apakah hasil pengujian BTA Anda?</string>
 </resources>
