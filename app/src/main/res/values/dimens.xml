@@ -1,0 +1,41 @@
+<resources>
+    <dimen name="fab_margin">8dp</dimen>
+    <dimen name="activity_horizontal_margin">8dp</dimen>
+    <dimen name="activity_vertical_margin">8dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="card_cover_height">100dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="action_button_margin">0dp</dimen>
+    <dimen name="toolbar_height">48dp</dimen>
+    <dimen name="toolbar_min_height">48dp</dimen>
+    <dimen name="toolbar_padding">0dp</dimen>
+
+    <dimen name="sizeframe0.5">0.5dp</dimen>
+    <dimen name="sizeframe1">1dp</dimen>
+    <dimen name="sizeframe2">2dp</dimen>
+    <dimen name="sizeframe3">3dp</dimen>
+    <dimen name="sizeframe5">6dp</dimen>
+    <dimen name="sizeframe8">8dp</dimen>
+    <dimen name="sizeframe10">10dp</dimen>
+    <dimen name="sizeframe12">12dp</dimen>
+    <dimen name="sizeframe14">14dp</dimen>
+    <dimen name="sizeframe16">16dp</dimen>
+    <dimen name="sizeframe20">20dp</dimen>
+    <dimen name="sizeframe25">25dp</dimen>
+    <dimen name="sizeframe30">30dp</dimen>
+    <dimen name="sizeframe35">35dp</dimen>
+    <dimen name="sizeframe26">26dp</dimen>
+    <dimen name="sizeframe40">40dp</dimen>
+
+    <dimen name="sizefont8">8sp</dimen>
+    <dimen name="sizefont10">10sp</dimen>
+    <dimen name="sizefont12">12sp</dimen>
+    <dimen name="sizefont14">14sp</dimen>
+    <dimen name="sizefont16">16sp</dimen>
+    <dimen name="sizefont18">18sp</dimen>
+    <dimen name="sizefont20">20sp</dimen>
+    <dimen name="sizefont22">22sp</dimen>
+    <dimen name="sizefont24">24sp</dimen>
+    <dimen name="sizefont26">26sp</dimen>
+</resources>
